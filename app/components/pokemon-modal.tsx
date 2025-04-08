@@ -16,8 +16,8 @@ export default function PokemonModal({
   const { stats } = pokemon;
 
   return (
-    <div className="w-full h-full absolute top-0 left-0 bg-black/50 z-100 ">
-      <div className="   w-4/5 absolute top-1/2 left-1/2 -translate-1/2 z-100">
+    <div className=" fixed inset-0 flex items-center justify-center bg-black/50 z-100 ">
+      <div className="   w-4/5 relative z-100">
         <button
           onClick={() => setSelected(null)}
           className="absolute top-0 right-0 size-16 p-2 -translate-y-1/2 translate-x-1/2 rounded-full bg-[#fbbf24] hover:bg-[#d97706]"
